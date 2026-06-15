@@ -16,6 +16,8 @@ jobs:
       TZ: ${{ secrets.TZ }}
       # 时间戳格式（可选，默认为 %Y-%m-%d %H:%M:%S）
       TIMESTAMP_FORMAT: ${{ secrets.TIMESTAMP_FORMAT }}
+      # 通知触发时机（可选，默认为余额变化或失败时通知）
+      NOTIFY_TRIGGERS: ${{ secrets.NOTIFY_TRIGGERS }}
       # 账号配置
       ANYROUTER_ACCOUNTS: ${{ secrets.ANYROUTER_ACCOUNTS }}
       # 是否显示敏感信息
